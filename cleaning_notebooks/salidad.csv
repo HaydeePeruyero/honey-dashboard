@@ -1,0 +1,427 @@
+BioSample,SRA,Host,Accession,Geographic location,Latitude,Longitude,Organism,Isolation source,Collection date
+SAMEA4680269,ERS2500466,,SAMEA4680269,,,,honey metagenome,,
+SAMEA4680270,ERS2500467,,SAMEA4680270,,,,honey metagenome,,
+SAMEA6455792,ERS4221341,,SAMEA6455792,Italy,,,honey metagenome,Honey from honeycomb,
+SAMEA6455793,ERS4221342,,SAMEA6455793,Italy,,,honey metagenome,Honey from honeycomb,
+SAMEA6455794,ERS4221343,,SAMEA6455794,Italy,,,honey metagenome,Honey from honeycomb,
+SAMN16092455,SRS7360046,not applicable,SAMN16092455,Finland,60.79,N,honey metagenome,honey,2018-08
+SAMN16092456,SRS7360047,not applicable,SAMN16092456,Finland,60.79,N,honey metagenome,honey,2018-08
+SAMN16092457,SRS7360048,not applicable,SAMN16092457,Finland,65.91,N,honey metagenome,honey,2018-08
+SAMN16092458,SRS7360049,not applicable,SAMN16092458,Finland,61.23,N,honey metagenome,honey,2018-08
+SAMN16092459,SRS7360051,not applicable,SAMN16092459,Finland,60.39,N,honey metagenome,honey,2018-08
+SAMN16092460,SRS7360052,not applicable,SAMN16092460,Finland,60.19,N,honey metagenome,honey,2018-08
+SAMN16092461,SRS7360054,not applicable,SAMN16092461,Finland,60.51,N,honey metagenome,honey,2018-08
+SAMN16092462,SRS7360053,not applicable,SAMN16092462,Finland,63.21,N,honey metagenome,honey,2018-08
+SAMN16092463,SRS7360055,not applicable,SAMN16092463,Finland,64.77,N,honey metagenome,honey,2018-08
+SAMN16092464,SRS7360056,not applicable,SAMN16092464,Finland,60.94,N,honey metagenome,honey,2018-08
+SAMN16092465,SRS7360057,not applicable,SAMN16092465,Finland,60.94,N,honey metagenome,honey,2018-08
+SAMN16092466,SRS7360058,not applicable,SAMN16092466,Finland,60.62,N,honey metagenome,honey,2018-08
+SAMN16092467,SRS7360037,not applicable,SAMN16092467,Estonia,59.95,N,honey metagenome,honey,2018-08
+SAMN16092468,SRS7360038,not applicable,SAMN16092468,Estonia,59.95,N,honey metagenome,honey,2018-08
+SAMN16092469,SRS7360040,not applicable,SAMN16092469,Estonia,59.39,N,honey metagenome,honey,2018-08
+SAMN16092470,SRS7360041,not applicable,SAMN16092470,Estonia,58.57,N,honey metagenome,honey,2018-08
+SAMN16092471,SRS7360042,not applicable,SAMN16092471,Estonia,58.31,N,honey metagenome,honey,2018-08
+SAMN16092472,SRS7360043,not applicable,SAMN16092472,Estonia,58.31,N,honey metagenome,honey,2018-08
+SAMN16092473,SRS7360044,not applicable,SAMN16092473,Estonia,57.90,N,honey metagenome,honey,2018-08
+SAMN16092474,SRS7360045,not applicable,SAMN16092474,Estonia,59.11,N,honey metagenome,honey,2018-08
+SAMN16092475,SRS7360059,not applicable,SAMN16092475,Finland,64.13,N,honey metagenome,honey,2018-08
+SAMN16092476,SRS7360060,not applicable,SAMN16092476,Finland,64.21,N,honey metagenome,honey,2018-08
+SAMN16092477,SRS7360062,not applicable,SAMN16092477,Finland,60.09,N,honey metagenome,honey,2018-08
+SAMN16092478,SRS7360063,not applicable,SAMN16092478,Finland,63.05,N,honey metagenome,honey,2018-08
+SAMN16092479,SRS7360064,not applicable,SAMN16092479,Finland,60.16,N,honey metagenome,honey,2018-08
+SAMN16092480,SRS7360065,not applicable,SAMN16092480,Finland,61.06,N,honey metagenome,honey,2018-08
+SAMN16092481,SRS7360066,not applicable,SAMN16092481,Finland,64.02,N,honey metagenome,honey,2018-08
+SAMN16092482,SRS7360067,not applicable,SAMN16092482,Sweden,58.72,N,honey metagenome,honey,2018-08
+SAMN16092483,SRS7360068,not applicable,SAMN16092483,Sweden,59.36,N,honey metagenome,honey,2018-08
+SAMN16092484,SRS7360069,not applicable,SAMN16092484,Sweden,57.09,N,honey metagenome,honey,2018-08
+SAMN16092485,SRS7360070,not applicable,SAMN16092485,Sweden,56.95,N,honey metagenome,honey,2018-08
+SAMN16092486,SRS7360071,not applicable,SAMN16092486,Sweden,59.26,N,honey metagenome,honey,2018-08
+SAMN16092487,SRS7360073,not applicable,SAMN16092487,Sweden,59.26,N,honey metagenome,honey,2018-08
+SAMN16092488,SRS7360074,not applicable,SAMN16092488,Sweden,57.49,N,honey metagenome,honey,2018-08
+SAMN16092489,SRS7360075,not applicable,SAMN16092489,Sweden,59.61,N,honey metagenome,honey,2018-08
+SAMN16092490,SRS7360076,not applicable,SAMN16092490,Sweden,58.00,N,honey metagenome,honey,2018-08
+SAMN16092491,SRS7360077,not applicable,SAMN16092491,Sweden,58.01,N,honey metagenome,honey,2018-08
+SAMN16092492,SRS7360078,not applicable,SAMN16092492,Sweden,58.58,N,honey metagenome,honey,2018-08
+SAMN16092493,SRS7360079,not applicable,SAMN16092493,Sweden,63.58,N,honey metagenome,honey,2018-08
+SAMN16092494,SRS7360080,not applicable,SAMN16092494,Sweden,63.58,N,honey metagenome,honey,2018-08
+SAMN16092495,SRS7360081,not applicable,SAMN16092495,Sweden,65.59,N,honey metagenome,honey,2018-08
+SAMN16092496,SRS7360082,not applicable,SAMN16092496,Sweden,65.90,N,honey metagenome,honey,2018-08
+SAMN16092497,SRS7360084,not applicable,SAMN16092497,Sweden,63.58,N,honey metagenome,honey,2018-08
+SAMN16092498,SRS7360085,not applicable,SAMN16092498,Sweden,66.05,N,honey metagenome,honey,2018-08
+SAMN16092499,SRS7359994,not applicable,SAMN16092499,Sweden,65.59,N,honey metagenome,honey,2018-08
+SAMN16092500,SRS7359995,not applicable,SAMN16092500,Sweden,63.58,N,honey metagenome,honey,2018-08
+SAMN40462708,SRS21017604,not collected,SAMN40462708,Turkey,40.26016244,N,honey metagenome,,not provided
+SAMN40462709,SRS21017605,not collected,SAMN40462709,Turkey,40.26016244,N,honey metagenome,,not provided
+SAMN40462710,SRS21017606,not collected,SAMN40462710,Turkey,40.26016244,N,honey metagenome,,not provided
+SAMN42493026,SRS21995958,,SAMN42493026,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493027,SRS21995957,,SAMN42493027,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493028,SRS21995901,,SAMN42493028,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493029,SRS21996022,,SAMN42493029,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493030,SRS21995852,,SAMN42493030,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493031,SRS21996045,,SAMN42493031,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493032,SRS21995687,,SAMN42493032,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493033,SRS21995796,,SAMN42493033,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493034,SRS21995934,,SAMN42493034,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493035,SRS21995948,,SAMN42493035,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493036,SRS21995956,,SAMN42493036,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493037,SRS21995690,,SAMN42493037,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493038,SRS21995960,,SAMN42493038,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493039,SRS21995701,,SAMN42493039,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493040,SRS21995877,,SAMN42493040,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493041,SRS21995811,,SAMN42493041,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493042,SRS21995822,,SAMN42493042,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493043,SRS21995980,,SAMN42493043,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493044,SRS21995710,,SAMN42493044,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493045,SRS21995888,,SAMN42493045,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493046,SRS21995902,,SAMN42493046,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493047,SRS21995994,,SAMN42493047,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493048,SRS21995725,,SAMN42493048,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493049,SRS21995731,,SAMN42493049,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493050,SRS21996008,,SAMN42493050,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493051,SRS21995744,,SAMN42493051,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493052,SRS21995905,,SAMN42493052,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493053,SRS21995910,,SAMN42493053,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493054,SRS21995825,,SAMN42493054,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493055,SRS21995838,,SAMN42493055,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493056,SRS21995754,,SAMN42493056,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493057,SRS21996033,,SAMN42493057,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493058,SRS21995774,,SAMN42493058,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493059,SRS21995766,,SAMN42493059,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493060,SRS21995783,,SAMN42493060,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493061,SRS21995939,,SAMN42493061,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493062,SRS21995785,,SAMN42493062,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493063,SRS21995849,,SAMN42493063,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493064,SRS21995850,,SAMN42493064,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493065,SRS21995851,,SAMN42493065,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493066,SRS21995853,,SAMN42493066,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493067,SRS21995854,,SAMN42493067,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493068,SRS21995855,,SAMN42493068,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493069,SRS21995856,,SAMN42493069,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493070,SRS21995857,,SAMN42493070,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493071,SRS21995858,,SAMN42493071,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493072,SRS21995860,,SAMN42493072,Estonia,not,collected,honey metagenome,honey,2018
+SAMN42493073,SRS21995795,,SAMN42493073,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493074,SRS21996044,,SAMN42493074,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493075,SRS21996043,,SAMN42493075,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493076,SRS21996055,,SAMN42493076,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493077,SRS21996046,,SAMN42493077,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493078,SRS21996047,,SAMN42493078,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493079,SRS21996048,,SAMN42493079,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493080,SRS21996050,,SAMN42493080,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493081,SRS21995682,,SAMN42493081,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493082,SRS21995685,,SAMN42493082,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493083,SRS21995683,,SAMN42493083,Estonia,not,collected,honey metagenome,honey,2017
+SAMN42493084,SRS21995684,,SAMN42493084,Estonia,not,collected,honey metagenome,honey,2018
+SAMN42493085,SRS21995686,,SAMN42493085,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493086,SRS21995688,,SAMN42493086,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493087,SRS21995791,,SAMN42493087,Latvia,not,collected,honey metagenome,honey,missing
+SAMN42493088,SRS21995792,,SAMN42493088,Poland,not,collected,honey metagenome,honey,2020
+SAMN42493089,SRS21995793,,SAMN42493089,Poland,not,collected,honey metagenome,honey,2020
+SAMN42493090,SRS21995794,,SAMN42493090,Spain,not,collected,honey metagenome,honey,missing
+SAMN42493091,SRS21995942,,SAMN42493091,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493092,SRS21995946,,SAMN42493092,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493093,SRS21995947,,SAMN42493093,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493094,SRS21995949,,SAMN42493094,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493095,SRS21995943,,SAMN42493095,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493096,SRS21995797,,SAMN42493096,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493097,SRS21995798,,SAMN42493097,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493098,SRS21995799,,SAMN42493098,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493099,SRS21995800,,SAMN42493099,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493100,SRS21995802,,SAMN42493100,Ukraine,not,collected,honey metagenome,honey,2020
+SAMN42493101,SRS21995801,,SAMN42493101,USA:Texas,not,collected,honey metagenome,honey,missing
+SAMN42493102,SRS21995803,,SAMN42493102,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493103,SRS21995804,,SAMN42493103,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493104,SRS21995806,,SAMN42493104,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493105,SRS21995805,,SAMN42493105,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493106,SRS21995936,,SAMN42493106,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493107,SRS21995940,,SAMN42493107,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493108,SRS21995941,,SAMN42493108,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493109,SRS21995866,,SAMN42493109,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493110,SRS21995876,,SAMN42493110,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493111,SRS21995879,,SAMN42493111,Greece,not,collected,honey metagenome,honey,missing
+SAMN42493112,SRS21995867,,SAMN42493112,Kazakhstan,not,collected,honey metagenome,honey,missing
+SAMN42493113,SRS21995880,,SAMN42493113,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493114,SRS21995944,,SAMN42493114,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493115,SRS21995945,,SAMN42493115,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493116,SRS21995950,,SAMN42493116,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493117,SRS21995951,,SAMN42493117,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493118,SRS21995954,,SAMN42493118,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493119,SRS21995953,,SAMN42493119,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493120,SRS21995859,,SAMN42493120,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493121,SRS21995861,,SAMN42493121,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493122,SRS21995862,,SAMN42493122,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493123,SRS21995863,,SAMN42493123,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493124,SRS21995864,,SAMN42493124,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493125,SRS21995865,,SAMN42493125,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493126,SRS21995955,,SAMN42493126,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493127,SRS21995959,,SAMN42493127,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493128,SRS21995952,,SAMN42493128,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493129,SRS21995869,,SAMN42493129,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493130,SRS21995868,,SAMN42493130,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493131,SRS21995695,,SAMN42493131,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493132,SRS21995694,,SAMN42493132,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493133,SRS21995693,,SAMN42493133,Spain,not,collected,honey metagenome,honey,missing
+SAMN42493134,SRS21995692,,SAMN42493134,Latvia,not,collected,honey metagenome,honey,missing
+SAMN42493135,SRS21995691,,SAMN42493135,Latvia,not,collected,honey metagenome,honey,missing
+SAMN42493136,SRS21995689,,SAMN42493136,Latvia,not,collected,honey metagenome,honey,missing
+SAMN42493137,SRS21995968,,SAMN42493137,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493138,SRS21995969,,SAMN42493138,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493139,SRS21995967,,SAMN42493139,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493140,SRS21995966,,SAMN42493140,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493141,SRS21995963,,SAMN42493141,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493142,SRS21995962,,SAMN42493142,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493143,SRS21995961,,SAMN42493143,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493144,SRS21995964,,SAMN42493144,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493145,SRS21995965,,SAMN42493145,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493146,SRS21995696,,SAMN42493146,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493147,SRS21995697,,SAMN42493147,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493148,SRS21995698,,SAMN42493148,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493149,SRS21995885,,SAMN42493149,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493150,SRS21995884,,SAMN42493150,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493151,SRS21995886,,SAMN42493151,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493152,SRS21995896,,SAMN42493152,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493153,SRS21995898,,SAMN42493153,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493154,SRS21995699,,SAMN42493154,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493155,SRS21995700,,SAMN42493155,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493156,SRS21995702,,SAMN42493156,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493157,SRS21995703,,SAMN42493157,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493158,SRS21995704,,SAMN42493158,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493159,SRS21995870,,SAMN42493159,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493160,SRS21995871,,SAMN42493160,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493161,SRS21995872,,SAMN42493161,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493162,SRS21995873,,SAMN42493162,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493163,SRS21995874,,SAMN42493163,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493164,SRS21995875,,SAMN42493164,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493165,SRS21995878,,SAMN42493165,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493166,SRS21995881,,SAMN42493166,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493167,SRS21995882,,SAMN42493167,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493168,SRS21995883,,SAMN42493168,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493169,SRS21995971,,SAMN42493169,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493170,SRS21995972,,SAMN42493170,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493171,SRS21995973,,SAMN42493171,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493172,SRS21995807,,SAMN42493172,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493173,SRS21995810,,SAMN42493173,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493174,SRS21995809,,SAMN42493174,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493175,SRS21995808,,SAMN42493175,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493176,SRS21995812,,SAMN42493176,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493177,SRS21995814,,SAMN42493177,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493178,SRS21995813,,SAMN42493178,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493179,SRS21995815,,SAMN42493179,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493180,SRS21995816,,SAMN42493180,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493181,SRS21995817,,SAMN42493181,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493182,SRS21995818,,SAMN42493182,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493183,SRS21995819,,SAMN42493183,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493184,SRS21995820,,SAMN42493184,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493185,SRS21995821,,SAMN42493185,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493186,SRS21995970,,SAMN42493186,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493187,SRS21995974,,SAMN42493187,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493188,SRS21995975,,SAMN42493188,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493189,SRS21995716,,SAMN42493189,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493190,SRS21995717,,SAMN42493190,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493191,SRS21995718,,SAMN42493191,Estonia,not,collected,honey metagenome,honey,2019
+SAMN42493192,SRS21995977,,SAMN42493192,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493193,SRS21995978,,SAMN42493193,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493194,SRS21995979,,SAMN42493194,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493195,SRS21995976,,SAMN42493195,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493196,SRS21995981,,SAMN42493196,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493197,SRS21995982,,SAMN42493197,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493198,SRS21995983,,SAMN42493198,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493199,SRS21995984,,SAMN42493199,Montenegro,not,collected,honey metagenome,honey,missing
+SAMN42493200,SRS21995985,,SAMN42493200,Denmark,not,collected,honey metagenome,honey,missing
+SAMN42493201,SRS21995705,,SAMN42493201,Denmark,not,collected,honey metagenome,honey,missing
+SAMN42493202,SRS21995706,,SAMN42493202,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493203,SRS21995707,,SAMN42493203,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493204,SRS21995708,,SAMN42493204,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493205,SRS21995709,,SAMN42493205,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493206,SRS21995711,,SAMN42493206,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493207,SRS21995712,,SAMN42493207,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493208,SRS21995713,,SAMN42493208,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493209,SRS21995714,,SAMN42493209,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493210,SRS21995715,,SAMN42493210,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493211,SRS21995989,,SAMN42493211,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493212,SRS21995719,,SAMN42493212,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493213,SRS21995720,,SAMN42493213,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493214,SRS21995897,,SAMN42493214,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493215,SRS21995887,,SAMN42493215,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493216,SRS21995889,,SAMN42493216,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493217,SRS21995890,,SAMN42493217,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493218,SRS21995891,,SAMN42493218,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493219,SRS21995892,,SAMN42493219,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493220,SRS21995893,,SAMN42493220,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493221,SRS21995894,,SAMN42493221,United Kingdom,not,collected,honey metagenome,honey,missing
+SAMN42493222,SRS21995895,,SAMN42493222,United Kingdom,not,collected,honey metagenome,honey,missing
+SAMN42493223,SRS21995900,,SAMN42493223,United Kingdom,not,collected,honey metagenome,honey,missing
+SAMN42493224,SRS21995899,,SAMN42493224,Italy,not,collected,honey metagenome,honey,missing
+SAMN42493225,SRS21995903,,SAMN42493225,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493226,SRS21995904,,SAMN42493226,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493227,SRS21995986,,SAMN42493227,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493228,SRS21995987,,SAMN42493228,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493229,SRS21995988,,SAMN42493229,Switzerland,not,collected,honey metagenome,honey,2022
+SAMN42493230,SRS21995990,,SAMN42493230,Switzerland,not,collected,honey metagenome,honey,2022
+SAMN42493231,SRS21995728,,SAMN42493231,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493232,SRS21995729,,SAMN42493232,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493233,SRS21995991,,SAMN42493233,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493234,SRS21995992,,SAMN42493234,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493235,SRS21995993,,SAMN42493235,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493236,SRS21995995,,SAMN42493236,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493237,SRS21995996,,SAMN42493237,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493238,SRS21995998,,SAMN42493238,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493239,SRS21995997,,SAMN42493239,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493240,SRS21995999,,SAMN42493240,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493241,SRS21996000,,SAMN42493241,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493242,SRS21996001,,SAMN42493242,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493243,SRS21995722,,SAMN42493243,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493244,SRS21995721,,SAMN42493244,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493245,SRS21995723,,SAMN42493245,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493246,SRS21995724,,SAMN42493246,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493247,SRS21995726,,SAMN42493247,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493248,SRS21995727,,SAMN42493248,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493249,SRS21996013,,SAMN42493249,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493250,SRS21996015,,SAMN42493250,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493251,SRS21996014,,SAMN42493251,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493252,SRS21996017,,SAMN42493252,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493253,SRS21996016,,SAMN42493253,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493254,SRS21995730,,SAMN42493254,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493255,SRS21995732,,SAMN42493255,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493256,SRS21995733,,SAMN42493256,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493257,SRS21995734,,SAMN42493257,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493258,SRS21995735,,SAMN42493258,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493259,SRS21995736,,SAMN42493259,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493260,SRS21996002,,SAMN42493260,Greece,not,collected,honey metagenome,honey,missing
+SAMN42493261,SRS21996003,,SAMN42493261,Portugal,not,collected,honey metagenome,honey,missing
+SAMN42493262,SRS21996004,,SAMN42493262,China,not,collected,honey metagenome,honey,missing
+SAMN42493263,SRS21996005,,SAMN42493263,China,not,collected,honey metagenome,honey,missing
+SAMN42493264,SRS21996006,,SAMN42493264,China,not,collected,honey metagenome,honey,missing
+SAMN42493265,SRS21996007,,SAMN42493265,China,not,collected,honey metagenome,honey,missing
+SAMN42493266,SRS21996009,,SAMN42493266,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493267,SRS21996012,,SAMN42493267,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493268,SRS21996011,,SAMN42493268,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493269,SRS21996010,,SAMN42493269,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493270,SRS21995737,,SAMN42493270,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493271,SRS21995907,,SAMN42493271,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493272,SRS21995739,,SAMN42493272,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493273,SRS21995738,,SAMN42493273,Finland,not,collected,honey metagenome,honey,missing
+SAMN42493274,SRS21995740,,SAMN42493274,Finland,not,collected,honey metagenome,honey,missing
+SAMN42493275,SRS21995741,,SAMN42493275,Finland,not,collected,honey metagenome,honey,missing
+SAMN42493276,SRS21995742,,SAMN42493276,Greece:Rhodes Island,not,collected,honey metagenome,honey,missing
+SAMN42493277,SRS21995743,,SAMN42493277,Greece:Rhodes Island,not,collected,honey metagenome,honey,missing
+SAMN42493278,SRS21995745,,SAMN42493278,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493279,SRS21995747,,SAMN42493279,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493280,SRS21995746,,SAMN42493280,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493281,SRS21995748,,SAMN42493281,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493282,SRS21995749,,SAMN42493282,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493283,SRS21995750,,SAMN42493283,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493284,SRS21995751,,SAMN42493284,China,not,collected,honey metagenome,honey,missing
+SAMN42493285,SRS21995752,,SAMN42493285,China,not,collected,honey metagenome,honey,missing
+SAMN42493286,SRS21995918,,SAMN42493286,China,not,collected,honey metagenome,honey,missing
+SAMN42493287,SRS21995828,,SAMN42493287,China,not,collected,honey metagenome,honey,missing
+SAMN42493288,SRS21995829,,SAMN42493288,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493289,SRS21995917,,SAMN42493289,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493290,SRS21995906,,SAMN42493290,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493291,SRS21995830,,SAMN42493291,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493292,SRS21995831,,SAMN42493292,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493293,SRS21995832,,SAMN42493293,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493294,SRS21995908,,SAMN42493294,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493295,SRS21995909,,SAMN42493295,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493296,SRS21995911,,SAMN42493296,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493297,SRS21995912,,SAMN42493297,Poland,not,collected,honey metagenome,honey,missing
+SAMN42493298,SRS21995913,,SAMN42493298,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493299,SRS21995914,,SAMN42493299,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493300,SRS21995915,,SAMN42493300,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493301,SRS21995916,,SAMN42493301,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493302,SRS21995919,,SAMN42493302,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493303,SRS21995921,,SAMN42493303,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493304,SRS21995823,,SAMN42493304,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493305,SRS21995824,,SAMN42493305,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN42493306,SRS21995826,,SAMN42493306,Yemen,not,collected,honey metagenome,honey,missing
+SAMN42493307,SRS21995827,,SAMN42493307,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493308,SRS21996023,,SAMN42493308,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493309,SRS21996024,,SAMN42493309,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493310,SRS21996025,,SAMN42493310,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493311,SRS21996026,,SAMN42493311,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493312,SRS21995833,,SAMN42493312,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493313,SRS21995834,,SAMN42493313,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493314,SRS21995835,,SAMN42493314,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493315,SRS21995837,,SAMN42493315,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493316,SRS21995836,,SAMN42493316,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493317,SRS21995839,,SAMN42493317,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493318,SRS21995840,,SAMN42493318,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493319,SRS21995841,,SAMN42493319,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493320,SRS21995842,,SAMN42493320,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493321,SRS21995843,,SAMN42493321,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493322,SRS21996018,,SAMN42493322,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493323,SRS21996020,,SAMN42493323,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493324,SRS21996019,,SAMN42493324,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493325,SRS21996021,,SAMN42493325,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493326,SRS21995753,,SAMN42493326,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493327,SRS21995755,,SAMN42493327,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493328,SRS21995756,,SAMN42493328,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493329,SRS21995757,,SAMN42493329,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493330,SRS21996028,,SAMN42493330,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493331,SRS21996027,,SAMN42493331,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493332,SRS21996029,,SAMN42493332,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493333,SRS21996030,,SAMN42493333,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493334,SRS21996032,,SAMN42493334,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493335,SRS21996031,,SAMN42493335,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493336,SRS21996034,,SAMN42493336,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493337,SRS21996037,,SAMN42493337,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493338,SRS21996035,,SAMN42493338,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493339,SRS21996036,,SAMN42493339,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493340,SRS21996038,,SAMN42493340,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493341,SRS21996039,,SAMN42493341,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493342,SRS21996041,,SAMN42493342,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493343,SRS21996040,,SAMN42493343,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493344,SRS21995772,,SAMN42493344,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493345,SRS21995773,,SAMN42493345,Estonia,not,collected,honey metagenome,honey,2021
+SAMN42493346,SRS21995920,,SAMN42493346,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493347,SRS21995922,,SAMN42493347,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493348,SRS21995758,,SAMN42493348,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493349,SRS21995759,,SAMN42493349,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493350,SRS21995760,,SAMN42493350,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493351,SRS21995761,,SAMN42493351,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493352,SRS21995762,,SAMN42493352,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493353,SRS21995763,,SAMN42493353,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493354,SRS21995765,,SAMN42493354,Bulgaria,not,collected,honey metagenome,honey,missing
+SAMN42493355,SRS21995764,,SAMN42493355,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493356,SRS21995767,,SAMN42493356,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493357,SRS21995768,,SAMN42493357,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493358,SRS21995770,,SAMN42493358,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493359,SRS21995769,,SAMN42493359,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493360,SRS21995771,,SAMN42493360,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493361,SRS21995935,,SAMN42493361,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493362,SRS21995777,,SAMN42493362,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493363,SRS21995779,,SAMN42493363,Estonia,not,collected,honey metagenome,honey,2020
+SAMN42493364,SRS21995781,,SAMN42493364,Austria,not,collected,honey metagenome,honey,missing
+SAMN42493365,SRS21995782,,SAMN42493365,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493366,SRS21995923,,SAMN42493366,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493367,SRS21995924,,SAMN42493367,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493368,SRS21995925,,SAMN42493368,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493369,SRS21995926,,SAMN42493369,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493370,SRS21995927,,SAMN42493370,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493371,SRS21995928,,SAMN42493371,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493372,SRS21995929,,SAMN42493372,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493373,SRS21995930,,SAMN42493373,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493374,SRS21995938,,SAMN42493374,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493375,SRS21995937,,SAMN42493375,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493376,SRS21995933,,SAMN42493376,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493377,SRS21995932,,SAMN42493377,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493378,SRS21995931,,SAMN42493378,Estonia,not,collected,honey metagenome,honey,missing
+SAMN42493379,SRS21995775,,SAMN42493379,Estonia,not,collected,honey metagenome,honey,2022
+SAMN42493380,SRS21995776,,SAMN42493380,United Kingdom,not,collected,honey metagenome,honey,missing
+SAMN42493381,SRS21995778,,SAMN42493381,United Kingdom,not,collected,honey metagenome,honey,missing
+SAMN42493382,SRS21995780,,SAMN42493382,Ghana,not,collected,honey metagenome,honey,missing
+SAMN42493383,SRS21996042,,SAMN42493383,India,not,collected,honey metagenome,honey,missing
+SAMN42493384,SRS21995784,,SAMN42493384,India,not,collected,honey metagenome,honey,missing
+SAMN42493385,SRS21995786,,SAMN42493385,India,not,collected,honey metagenome,honey,missing
+SAMN42493386,SRS21995787,,SAMN42493386,India,not,collected,honey metagenome,honey,missing
+SAMN42493387,SRS21995788,,SAMN42493387,Saudi Arabia,not,collected,honey metagenome,honey,missing
+SAMN42493388,SRS21995790,,SAMN42493388,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493389,SRS21995789,,SAMN42493389,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493390,SRS21995844,,SAMN42493390,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493391,SRS21995846,,SAMN42493391,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493392,SRS21995845,,SAMN42493392,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493393,SRS21995847,,SAMN42493393,not applicable,not,collected,honey metagenome,honey,missing
+SAMN42493394,SRS21995848,,SAMN42493394,Ukraine,not,collected,honey metagenome,honey,missing
+SAMN47760422,SRS24584644,Avicennia marina,SAMN47760422,"India: south 24 parganas, Sundarban,Boney camp",21.49,N,honey metagenome,,2021-06-11
+SAMN47760423,SRS24584646,Aegiceras corniculatum (L.) Blanco,SAMN47760423,"India: south 24 parganas, Sundarban, kalas",21.41,N,honey metagenome,,2021-06-10
+SAMN47760424,SRS24584645,Aegialitis rotundifolia,SAMN47760424,"India: south 24 parganas, Sundarban, Chulkati",21.35,N,honey metagenome,,2021-03-08
