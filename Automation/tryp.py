@@ -3,15 +3,12 @@ import subprocess
 import sys
 import os
 from concurrent.futures import ThreadPoolExecutor
+import queue
 
-executor = ThreadPoolExecutor(max_workers=4)  # Or however many concurrent jobs you want
-
+executor = ThreadPoolExecutor(max_workers=4)
+ack_queue = queue.Queue()  # Thread-safe queue for delivery tags to ack
 
 class consumer:
-    """
-    Subscriber class for the task_publisher class, its purpose is to process individual files
-    """
-
     def __init__(self, message: str):
         dirs = message.split('#')
         self.workdir = dirs[0]
@@ -21,7 +18,6 @@ class consumer:
         self.script = f"{self.workdir}/Bash-Scripts/{self.step}.sh"
 
     def processOutdir(self):
-        """ Checks for existance of output directory and creates it if not """
         outdir = self.workdir + '/output/' + self.step
         if not os.path.isdir(outdir):
             try:
@@ -34,9 +30,7 @@ class consumer:
         return outdir
 
     def processMessage(self):
-        """ Full function for getting the information from the queue and accessing the script """
         if self.step == '01_download':
-            # Split to get just the id
             id = self.file.split('/')[-1]
             command = [self.script, self.workdir, id, self.outdir]
         else:
@@ -54,14 +48,12 @@ class consumer:
             print("STDOUT:\n", e.stdout)
             print("STDERR:\n", e.stderr)
 
-
 def main():
-    # Connection to RabbitMQ
     connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
     channel = connection.channel()
 
     channel.queue_declare(queue='task_queue', durable=True)
-    channel.basic_qos(prefetch_count=1)  # Important: one message at a time per worker
+    channel.basic_qos(prefetch_count=1)
 
     print(' [*] Waiting for messages. To exit press CTRL+C')
 
@@ -69,25 +61,32 @@ def main():
         message = body.decode()
         print(f" [x] Received {message}")
 
-        def process_and_ack():
+        def process_and_signal_ack():
             worker = consumer(message)
             worker.processMessage()
-            ch.basic_ack(delivery_tag=method.delivery_tag)
+            # Instead of acking here, put the delivery_tag in the ack_queue
+            ack_queue.put((ch, method.delivery_tag))
             print(" [x] Done")
 
-        # Submit the work to the executor
-        executor.submit(process_and_ack)
+        executor.submit(process_and_signal_ack)
 
     channel.basic_consume(queue='task_queue', on_message_callback=callback)
 
-
-
     try:
-        channel.start_consuming()
+        while True:
+            # Process RabbitMQ events
+            connection.process_data_events(time_limit=1)
+
+            # Process any pending acks
+            while not ack_queue.empty():
+                ch, delivery_tag = ack_queue.get()
+                ch.basic_ack(delivery_tag=delivery_tag)
+                ack_queue.task_done()
     except KeyboardInterrupt:
         print('Interrupted')
-        channel.stop_consuming()
         executor.shutdown(wait=True)
+        channel.stop_consuming()
+        connection.close()
 
 if __name__ == '__main__':
     main()

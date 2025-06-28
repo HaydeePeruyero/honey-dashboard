@@ -31,7 +31,7 @@ echo "SRA_LIST is set to: $SRA_LIST"
 # Verificar si ya existen archivos comprimidos
 if ls "$OUTDIR/${SRA_ID}"*.fastq.gz &> /dev/null; then
     echo "Ya existe output para $SRA_ID, se omite."
-    continue
+    exit 2
 fi
 
 echo "Procesando $SRA_ID..."
