@@ -44,21 +44,8 @@ class task_publisher:
             return
 
 
-    # TODO: Función de process inputdir
-    def process_inputdir(self):
-        """
-        Revisa que el inputdir ingresado exista.
-        """
-        print("Escriba el directorio dentro de workdir donde se encuentran los archivos a procesar")
-        filedir = self.workdir + '/' + input()
-        # Check if work dir actually exists
-        if os.path.isdir(filedir):
-            print('File directory existe')
-        else:
-            print(f'{filedir} no existe, intentelo de nuevo')
-            filedir = self.process_inputdir()
-        return filedir
-    
+
+    # TODO make sure input is prompted only if it is failed 
     def process_inputdir(self):
         """
         Revisa que el inputdir ingresado exista.
@@ -133,7 +120,8 @@ class task_publisher:
             with open(self.inputdir, 'r') as f:
                 ids = f.read().split('\n')
             for id in ids:
-                message = self.workdir + '#' + id + '#' + self.step
+                # Using the '#' delimiter send the workdir, the download id and the step 
+                message = f"{self.workdir}#{id}#{self.step}"
                 # The exchange is an empty string by which we connect to the queue, this is the method by which we publish it 
                 channel.basic_publish(exchange='',
                                     routing_key='task_queue',
@@ -145,7 +133,7 @@ class task_publisher:
         else:    
             for file in os.listdir(self.inputdir):
                 filepath = os.path.join(self.inputdir, file)
-                message = self.workdir + '#' + file + '#' + self.step
+                message = f"{self.workdir}#{self.inputdir}/{file}#{self.step}"
                 # The exchange is an empty string by which we connect to the queue, this is the method by which we publish it 
                 channel.basic_publish(exchange='',
                                     routing_key='task_queue',
