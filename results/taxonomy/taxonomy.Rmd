@@ -43,36 +43,48 @@ raw_metagenomes@tax_table@.Data <- substring(raw_metagenomes@tax_table@.Data, 4)
 colnames(raw_metagenomes@tax_table@.Data)<- c("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species")
 #View(raw_metagenomes@tax_table@.Data)
 
+# Obtener los nombres de las muestras
+sample_names <- sample_names(raw_metagenomes)
+
+# Cambiar nombres con "_Meli" a "Meli_número"
+sample_names <- gsub("(\\d+)_Melli", "Meli_\\1", sample_names)
+
+# Cambiar nombres con "_Scapto" a "Scapto_número"
+sample_names <- gsub("(\\d+)_Scapto", "Scapto_\\1", sample_names)
+
+# Asignar los nuevos nombres de las muestras al objeto phyloseq
+sample_names(raw_metagenomes) <- sample_names
+
 # upload the metadata
 df_meta <- read_tsv(here::here("data","metadata_Es_Shotgun_Mex.tsv"))
+
+df_meta <- df_meta %>%
+  mutate(sample_name = sub("Melli", "Meli", sample_name))
+
 
 # rename the names for the Mex samples
 # change n_specie to specie_n
 df_meta <- df_meta %>%
-  mutate(SampleID = case_when(
-    grepl("_Scapto", ID) ~ paste0("Scapto_", sub("_Scapto.*", "", ID)),
-    grepl("_Melli", ID) ~ paste0("Meli_", sub("_Melli.*", "", ID)),
-    TRUE ~ as.character(ID) 
+  mutate(sample_name = case_when(
+    grepl("_Meli", sample_name) ~ paste0("Meli_", sub("_Meli.*", "", sample_name)),
+    grepl("_Scapto", sample_name) ~ paste0("Scapto_", sub("_Scapto.*", "", sample_name)),
+    TRUE ~ sample_name
   ))
 
+
+# Asegúrate de que los rownames están bien definidos
+rownames(df_meta) <- df_meta$sample_name
+
+# Reordenar según el orden de sample_names en el objeto phyloseq
+df_meta_ordenado <- df_meta[match(sample_names(raw_metagenomes), df_meta$sample_name), ]
+
+
 # change the metadata name of samples to construct a new biom file
-df_metadata <- sample_data(df_meta)
-rownames(df_metadata) <- df_meta$ID
+df_metadata <- sample_data(df_meta_ordenado)
+rownames(df_metadata) <- df_meta_ordenado$sample_name
 
 # construc the new biom file with the new names of the samples
 all_data <- merge_phyloseq(raw_metagenomes, sample_data(df_metadata))
-
-# Obtener los nombres de las muestras
-sample_names <- sample_names(all_data)
-
-# Cambiar nombres con "_Melli" a "M_número"
-sample_names <- gsub("(\\d+)_Melli", "Meli_\\1", sample_names)
-
-# Cambiar nombres con "_Scapto" a "S_número"
-sample_names <- gsub("(\\d+)_Scapto", "Scapto_\\1", sample_names)
-
-# Asignar los nuevos nombres de las muestras al objeto phyloseq
-sample_names(all_data) <- sample_names
 
 # Verificar los nuevos nombres de las muestras
 sample_names(all_data)
