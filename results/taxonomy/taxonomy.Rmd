@@ -78,6 +78,6 @@ sample_names(all_data) <- sample_names
 sample_names(all_data)
 ```
 
-```{r}
+```{r, eval=FALSE}
 saveRDS(all_data, file = here::here("data", "honey_Es_Shotgun_Mexico.rds"))
 ```

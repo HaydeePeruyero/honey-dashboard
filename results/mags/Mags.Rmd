@@ -20,34 +20,28 @@ library("patchwork")
 library(readr)
 library(tidyverse)
 library(dplyr)
+library(here)
 ```
 
 ```{r}
-df_new <- read_delim("D:/Users/hayde/Documents/R_sites/honey-dashboard/data/final_quality_Mex.tsv", 
+df <- read_delim(here::here("data","final_quality_Mex_Shotgun_Es.tsv"), 
     delim = "\t", escape_double = FALSE, 
     trim_ws = TRUE)
-head(df_new)
-```
-
-```{r}
-df_old <- read_delim("D:/Users/hayde/Documents/R_sites/honey-dashboard/data/final_quality_Mex_old.tsv", 
-    delim = "\t", escape_double = FALSE, 
-    trim_ws = TRUE)
-head(df_old)
+head(df)
 ```
 
 
 ```{r}
-df_old <- df_old[df_old[[1]] != "Bin Id", ]
-
-df_old$Contamination <- as.numeric(df_old$Contamination)
-df_old$Completeness <- as.numeric(df_old$Completeness)
-
-df_new$Contamination <- as.numeric(df_new$Contamination)
-df_new$Completeness <- as.numeric(df_new$Completeness)
+df$Contamination <- as.numeric(df$Contamination)
+df$Completeness <- as.numeric(df$Completeness)
 
 # Filtrar en df1
-df_old_fil <- df_old %>% filter(df_old$Completeness >= 90, df_old$Contamination <= 15)
-df_new_fil <- df_new %>% filter(df_new$Completeness >= 90, df_new$Contamination <= 15)
+df_filtrado <- df %>% filter(df$Completeness >= 90, df$Contamination <= 15)
 ```
 
+
+
+```{r}
+## Guardar en un archivo el df_filtrado
+## guardar o copiar los Ids de los mags que queden en un archivo txt
+```
