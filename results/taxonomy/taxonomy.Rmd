@@ -9,3 +9,36 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r, echo=FALSE, warning=FALSE}
+library("phyloseq")
+library("ggplot2")
+library("RColorBrewer")
+library("patchwork")
+library("readr")
+library("tidyverse")
+library("grid")
+library("gridExtra")
+library("paletteer")
+library("forcats")
+library(plyr)
+library(reshape2)
+library(vegan)
+library(car) # for levenetest
+library(multcompView)
+library(FSA) # duntest
+```
+
+First, we need to read the biom files. In this file, we found the following **Kingdoms**.
+
+```{r, echo=FALSE}
+# read the biom file
+raw_metagenomes <- import_biom("D:/Users/hayde/Documents/R_sites/honey-dashboard/data/honey_Es.biom")
+
+# short the names, quit the first 4 characteres
+raw_metagenomes@tax_table@.Data <- substring(raw_metagenomes@tax_table@.Data, 4)
+
+# rename the columns
+colnames(raw_metagenomes@tax_table@.Data)<- c("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species")
+```
+
+

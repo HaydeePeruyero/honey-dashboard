@@ -1,0 +1,53 @@
+---
+title: 'Especies más cercanas MAGS'
+subtitle: 'Reads'
+author:
+ - Adriana Haydé Contreras Peruyero (haydeeperuyero@gmail.com)
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+```
+
+```{r}
+library("phyloseq")
+library("ggplot2")
+library("RColorBrewer")
+library("patchwork")
+library(readr)
+library(tidyverse)
+library(dplyr)
+```
+
+```{r}
+df_new <- read_delim("D:/Users/hayde/Documents/R_sites/honey-dashboard/data/final_quality_Mex.tsv", 
+    delim = "\t", escape_double = FALSE, 
+    trim_ws = TRUE)
+head(df_new)
+```
+
+```{r}
+df_old <- read_delim("D:/Users/hayde/Documents/R_sites/honey-dashboard/data/final_quality_Mex_old.tsv", 
+    delim = "\t", escape_double = FALSE, 
+    trim_ws = TRUE)
+head(df_old)
+```
+
+
+```{r}
+df_old <- df_old[df_old[[1]] != "Bin Id", ]
+
+df_old$Contamination <- as.numeric(df_old$Contamination)
+df_old$Completeness <- as.numeric(df_old$Completeness)
+
+df_new$Contamination <- as.numeric(df_new$Contamination)
+df_new$Completeness <- as.numeric(df_new$Completeness)
+
+# Filtrar en df1
+df_old_fil <- df_old %>% filter(df_old$Completeness >= 90, df_old$Contamination <= 15)
+df_new_fil <- df_new %>% filter(df_new$Completeness >= 90, df_new$Contamination <= 15)
+```
+
