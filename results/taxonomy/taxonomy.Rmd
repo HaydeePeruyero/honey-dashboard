@@ -56,7 +56,7 @@ sample_names <- gsub("(\\d+)_Scapto", "Scapto_\\1", sample_names)
 sample_names(raw_metagenomes) <- sample_names
 
 # upload the metadata
-df_meta <- read_tsv(here::here("data","metadata_Es_Shotgun_Mex.tsv"))
+df_meta <- read_csv(here::here("data","metadata_Es_Shotgun_Mex_up.csv"))
 
 df_meta <- df_meta %>%
   mutate(sample_name = sub("Melli", "Meli", sample_name))
