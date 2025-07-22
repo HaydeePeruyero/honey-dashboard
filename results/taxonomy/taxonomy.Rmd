@@ -30,10 +30,10 @@ First, we need to read the biom files. In this file, we found the following **Ki
 
 ```{r, echo=FALSE}
 # ruta
-ruta <- here::here("data", "honey_4_20_Es_Shotgun_Mexico_json.biom")
+ruta <- here::here("data/bioms", "honey_4_20_Es_Shotgun_Mexico_json.biom")
 
 # read the biom file
-raw_metagenomes <- import_biom(as.character(here::here("data", "honey_4_20_Es_Shotgun_Mexico_json.biom")))
+raw_metagenomes <- import_biom(as.character(here::here("data/bioms", "honey_4_20_Es_Shotgun_Mexico_json.biom")))
 
 # short the names, quit the first 4 characteres
 raw_metagenomes@tax_table@.Data <- substring(raw_metagenomes@tax_table@.Data, 4)
@@ -56,7 +56,7 @@ sample_names <- gsub("(\\d+)_Scapto", "Scapto_\\1", sample_names)
 sample_names(raw_metagenomes) <- sample_names
 
 # upload the metadata
-df_meta <- read_csv(here::here("data","metadata_Es_Shotgun_Mex_up.csv"))
+df_meta <- read_csv(here::here("data/tables","metadata_Es_Shotgun_Mex_up.csv"))
 
 df_meta <- df_meta %>%
   mutate(sample_name = sub("Melli", "Meli", sample_name))
@@ -91,5 +91,5 @@ sample_names(all_data)
 ```
 
 ```{r, eval=FALSE}
-saveRDS(all_data, file = here::here("data", "honey_Es_Shotgun_Mexico.rds"))
+saveRDS(all_data, file = here::here("data/bioms", "honey_Es_Shotgun_Mexico.rds"))
 ```

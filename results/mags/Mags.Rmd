@@ -24,7 +24,7 @@ library(here)
 ```
 
 ```{r}
-df <- read_delim(here::here("data","final_quality_Mex_Shotgun_Es.tsv"), 
+df <- read_delim(here::here("data/tables","final_quality_Mex_Shotgun_Es.tsv"), 
     delim = "\t", escape_double = FALSE, 
     trim_ws = TRUE)
 head(df)
