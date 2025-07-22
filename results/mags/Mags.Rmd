@@ -42,6 +42,8 @@ df_filtrado <- df %>% filter(df$Completeness >= 90, df$Contamination <= 15)
 
 
 ```{r}
-## Guardar en un archivo el df_filtrado
-## guardar o copiar los Ids de los mags que queden en un archivo txt
+#Se guarda en un archivo en el df_filtrado
+write_tsv(df_filtrado, here("data","filtered_quality_Mex_Shotgun_Es.tsv"))
+#Se guarda en .txt los IDs de los mags filtrados
+writeLines(as.character(df[["Bin Id"]]), here ("data","IDs_MAGS_filtrados.txt"))
 ```
