@@ -50,7 +50,7 @@ Centro de Ciencias Matemáticas, UNAM – SECIHTI
 ## 🤝 Collaborators
 
 
-- Gabby, Universidad    (Preprocessing)
+- Gabriela Itavii Ramírez Ferrin, Universidad Tecnológica de la Mixteca  (Preprocessing)
 - Juan Manuel, UMSNH  (Automatization)
 - Nelly Sélem Mojica, CCM, UNAM
 - Aurora Xolalpa Aroche, Universidad
