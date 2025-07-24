@@ -100,6 +100,9 @@ data_filt <- prune_samples(sample_sums(all_data) >= 20000, all_data)
 saveRDS(data_filt, file = here::here("data/bioms", "honey_Es_Shotgun_Mexico_filter.rds"))
 ```
 
+```{r}
+all_data <- data_filt
+```
 
 ## Alpha diversity
 
@@ -125,9 +128,7 @@ alpha_plot <- plot_richness(physeq = data, color= "Specie",
 alpha_plot
 ```
 
-```{r}
-all_data <- data_filt
-```
+
 
 ```{r}
 data <- subset_taxa(all_data, Kingdom == "Viruses") #Eukaryota, Viruses, Archaea
@@ -208,4 +209,94 @@ dunnO <- dunnTest(Observed ~ Specie,
                   data=alphadiv,
                   method="bh")
 dunnO
+```
+
+## Beta diversity
+
+```{r}
+meta_ord <- ordinate(physeq = data, method = "NMDS", 
+                     distance = "bray")
+
+beta_div_plot <- plot_ordination(physeq = data, ordination = meta_ord, color="Country", shape="Specie") +
+  geom_point(size = 4) +  # Adjust point size
+  #scale_color_manual(values = c("#009292", "#FF6DB6", "#006DDB", "#B66DFF", "#924900", "#DB6D00"))+
+  theme_minimal() +  # Use a minimal theme for clean look
+  theme(legend.position = "right") +  # Position legend on the right
+  labs(x = "NMDS1", y = "NMDS2")+
+  theme(
+    text = element_text(size = 16), # Cambia el tipo de letra y tamaño
+    plot.title = element_text(size = 16, face = "bold"), # Tamaño y estilo del título
+    axis.title.x = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje X
+    axis.title.y = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje Y
+    axis.text.x = element_text(size = 12), # Tamaño de las etiquetas del eje X
+    axis.text.y = element_text(size = 12), # Tamaño de las etiquetas del eje Y
+    legend.title = element_text(size = 14, face = "bold"), # Tamaño y estilo del título de la leyenda
+    legend.text = element_text(size = 14, face = "italic") # Tamaño del texto de la leyenda
+  )+
+  guides(
+    color = guide_legend(override.aes = list(shape = 15))
+  )
+beta_div_plot
+```
+
+```{r}
+rel_data <- transform_sample_counts(data, function(x) x*100 / sum(x) )
+```
+
+```{r}
+# method = NMDS, PCoA, 
+meta_ord <- ordinate(physeq = rel_data, method = "NMDS", 
+                     distance = "bray")
+
+beta_div_plot <- plot_ordination(physeq = rel_data, ordination = meta_ord, color="Country", shape="Specie") +
+  geom_point(size = 4) +  # Adjust point size
+  #scale_color_manual(values = c("#009292", "#FF6DB6", "#006DDB", "#B66DFF", "#924900", "#DB6D00"))+
+  theme_minimal() +  # Use a minimal theme for clean look
+  theme(legend.position = "right") +  # Position legend on the right
+  #labs(x = "NMDS1", y = "NMDS2")+
+  theme(
+    text = element_text(size = 16), # Cambia el tipo de letra y tamaño
+    plot.title = element_text(size = 16, face = "bold"), # Tamaño y estilo del título
+    axis.title.x = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje X
+    axis.title.y = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje Y
+    axis.text.x = element_text(size = 12), # Tamaño de las etiquetas del eje X
+    axis.text.y = element_text(size = 12), # Tamaño de las etiquetas del eje Y
+    legend.title = element_text(size = 14, face = "bold"), # Tamaño y estilo del título de la leyenda
+    legend.text = element_text(size = 14, face = "italic") # Tamaño del texto de la leyenda
+  )+
+  guides(
+    color = guide_legend(override.aes = list(shape = 15))
+  )
+beta_div_plot
+```
+
+
+```{r}
+data <- subset_taxa(all_data, Kingdom == "Bacteria") #Eukaryota, Viruses, Archaea
+data_subset <- subset_taxa(data, Genus != "")
+rel_data <- transform_sample_counts(data_subset, function(x) x*100 / sum(x) )
+# method = NMDS, PCoA, 
+meta_ord <- ordinate(physeq = rel_data, method = "NMDS", 
+                     distance = "bray")
+
+beta_div_plot <- plot_ordination(physeq = rel_data, ordination = meta_ord, color="Country", shape="Specie") +
+  geom_point(size = 4) +  # Adjust point size
+  #scale_color_manual(values = c("#009292", "#FF6DB6", "#006DDB", "#B66DFF", "#924900", "#DB6D00"))+
+  theme_minimal() +  # Use a minimal theme for clean look
+  theme(legend.position = "right") +  # Position legend on the right
+  #labs(x = "NMDS1", y = "NMDS2")+
+  theme(
+    text = element_text(size = 16), # Cambia el tipo de letra y tamaño
+    plot.title = element_text(size = 16, face = "bold"), # Tamaño y estilo del título
+    axis.title.x = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje X
+    axis.title.y = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje Y
+    axis.text.x = element_text(size = 12), # Tamaño de las etiquetas del eje X
+    axis.text.y = element_text(size = 12), # Tamaño de las etiquetas del eje Y
+    legend.title = element_text(size = 14, face = "bold"), # Tamaño y estilo del título de la leyenda
+    legend.text = element_text(size = 14, face = "italic") # Tamaño del texto de la leyenda
+  )+
+  guides(
+    color = guide_legend(override.aes = list(shape = 15))
+  )
+beta_div_plot
 ```
