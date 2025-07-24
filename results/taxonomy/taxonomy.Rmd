@@ -89,7 +89,123 @@ all_data <- merge_phyloseq(raw_metagenomes, sample_data(df_metadata))
 # Verificar los nuevos nombres de las muestras
 sample_names(all_data)
 ```
+```{r}
+muestras_vacias <- sample_names(all_data)[sample_sums(all_data) < 20000]
+print(muestras_vacias)
+data_filt <- prune_samples(sample_sums(all_data) >= 20000, all_data)
+```
+
 
 ```{r, eval=FALSE}
-saveRDS(all_data, file = here::here("data/bioms", "honey_Es_Shotgun_Mexico.rds"))
+saveRDS(data_filt, file = here::here("data/bioms", "honey_Es_Shotgun_Mexico_filter.rds"))
+```
+
+
+## Alpha diversity
+
+```{r}
+data <- subset_taxa(all_data, Kingdom == "Bacteria")
+alpha_plot <- plot_richness(physeq = data, color= "Specie",
+                                measures = c("Observed", "Shannon"))+
+  geom_point(shape = 15, size = 3) +
+  facet_grid(~Specie)+
+  scale_color_manual(values = c("#009292", "#FF6DB6", "#006DDB", "#B66DFF", "#924900", "#DB6D00"))+
+  labs(x= "Samples")+
+  theme(
+    text = element_text(size = 16), # Cambia el tipo de letra y tamaño
+    plot.title = element_text(size = 16, face = "bold"), # Tamaño y estilo del título
+    axis.title.x = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje X
+    axis.title.y = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje Y
+    axis.text.x = element_text(size = 12), # Tamaño de las etiquetas del eje X
+    axis.text.y = element_text(size = 12), # Tamaño de las etiquetas del eje Y
+    legend.title = element_text(size = 14, face = "bold"), # Tamaño y estilo del título de la leyenda
+    legend.text = element_text(size = 14), # Tamaño del texto de la leyenda
+    legend.position = "bottom"
+  )
+alpha_plot
+```
+
+```{r}
+all_data <- data_filt
+```
+
+```{r}
+data <- subset_taxa(all_data, Kingdom == "Viruses") #Eukaryota, Viruses, Archaea
+# Obtener categorías únicas de la variable (ej. Specie, Country, City)
+categorias <- unique(sample_data(data)$Specie)
+categorias <- na.omit(categorias)
+n_cat <- length(categorias)
+
+# Colores fijos para algunas categorías
+colores_fijos <- c(
+  "Melipona beecheii" = "#b8860b",
+  "Scaptotrigona mexicana" = "#FFBF00"
+)
+
+
+# Separar las categorías que tienen color fijo
+categorias_fijas <- intersect(categorias, names(colores_fijos))
+categorias_restantes <- setdiff(categorias, categorias_fijas)
+n_restantes <- length(categorias_restantes)
+
+# Seleccionar colores para las restantes
+if (n_restantes <= 5) {
+  selected <- t(color_matrix)[1, 1:n_restantes]
+  
+} else if (n_restantes <= 10) {
+  tonos <- c(1, 3)
+  color_combos <- as.vector((color_matrix)[, tonos + 2])
+  selected <- color_combos[1:n_restantes]
+  
+} else if (n_restantes <= 25) {
+  selected <- t(all_colors)[1:n_restantes]
+  
+} else {
+  selected <- rep(t(all_colors), length.out = n_restantes)
+}
+
+# Asignar nombres
+names(selected) <- categorias_restantes
+
+# Combinar con los colores fijos
+selected_colors <- c(colores_fijos[categorias_fijas], selected)
+
+
+alpha_plot <- plot_richness(physeq = data, x= "Specie",
+                                measures = c("Observed"))+ #c("Observed", "Chao1", "ACE", "Shannon", "Simpson", "InvSimpson", "Fisher")
+  geom_boxplot(aes(fill = Specie), show.legend = FALSE) +
+  geom_jitter(aes(), height = 0, width = .1) +
+  scale_fill_manual(values = selected_colors) +
+  #scale_color_manual(values = c("#009292", "#FF6DB6", "#006DDB", "#B66DFF", "#924900", "#DB6D00"))+
+  labs(x= "Samples")+
+  theme(
+    text = element_text(size = 16), # Cambia el tipo de letra y tamaño
+    plot.title = element_text(size = 16, face = "bold"), # Tamaño y estilo del título
+    axis.title.x = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje X
+    axis.title.y = element_text(size = 14, face = "bold"), # Tamaño y estilo del título del eje Y
+    axis.text.x = element_text(size = 12), # Tamaño de las etiquetas del eje X
+    axis.text.y = element_text(size = 12), # Tamaño de las etiquetas del eje Y
+    legend.title = element_text(size = 14, face = "bold"), # Tamaño y estilo del título de la leyenda
+    legend.text = element_text(size = 14), # Tamaño del texto de la leyenda
+    legend.position = "bottom"
+  )
+alpha_plot
+```
+
+```{r}
+alphadiv <- estimate_richness(data, measures = c("Observed", "Chao1", "Shannon", "Simpson")) %>%
+  rownames_to_column(var = "sample_name") %>%
+  left_join(as.data.frame(sample_data(data)), by = "sample_name") 
+```
+
+
+```{r}
+kruskal.test(Observed ~ Country, data = alphadiv) 
+```
+```{r}
+library(FSA)
+dunnO <- dunnTest(Observed ~ Specie,
+                  data=alphadiv,
+                  method="bh")
+dunnO
 ```
