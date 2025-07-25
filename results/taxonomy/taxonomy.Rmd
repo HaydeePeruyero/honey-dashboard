@@ -131,6 +131,8 @@ alpha_plot
 
 
 ```{r}
+all_colors <- paletteer::paletteer_d("colorBlindness::SteppedSequential5Steps")
+color_matrix <- matrix(all_colors, nrow = 5, byrow = TRUE)
 data <- subset_taxa(all_data, Kingdom == "Viruses") #Eukaryota, Viruses, Archaea
 # Obtener categorías únicas de la variable (ej. Specie, Country, City)
 categorias <- unique(sample_data(data)$Specie)
@@ -299,4 +301,130 @@ beta_div_plot <- plot_ordination(physeq = rel_data, ordination = meta_ord, color
     color = guide_legend(override.aes = list(shape = 15))
   )
 beta_div_plot
+```
+
+
+```{r}
+set.seed(1234)
+bray_dist <- distance(data, method = "bray")
+metadata <- sample_data(data)
+
+metadata <- as.data.frame(metadata)
+
+adonis2(bray_dist ~ metadata$Specie)
+
+adonis2(bray_dist ~ metadata$Country, permutations = 1000)
+
+```
+
+## Diversidad
+
+```{r}
+# Agrupar por Kingdom
+rel_phylum_global <- tax_glom(all_data, taxrank = 'Kingdom')
+
+# Transformar los datos a porcentajes por muestra
+rel_phylum_global <- transform_sample_counts(rel_phylum_global, function(x) x * 100 / sum(x))
+
+# Convertir a data.frame para visualización y análisis
+rel_phyl_global_df <- psmelt(rel_phylum_global)
+
+# Convertir la columna 'Kingdom' en factor
+rel_phyl_global_df$Kingdom <- as.factor(rel_phyl_global_df$Kingdom)
+```
+
+```{r}
+# Define your custom color palette
+phylum_colors_rel <- c(
+  "Bacteria" = "#4F81BD", ##1f78b4", 
+  "Eukaryota" = "#9BBB59"  , #"#33a02c",
+  "Viruses" = "#F79646",#"#6a3d9a"
+  "Archaea" = "red"
+)
+
+rel_phyl_global_df$Kingdom <- factor(rel_phyl_global_df$Kingdom, levels = c("Archaea", "Bacteria", "Eukaryota", "Viruses"))
+
+relative_plot_phylum <- ggplot(data=rel_phyl_global_df, aes(x=Sample, y=Abundance, fill=Kingdom))+ 
+  geom_bar(aes(), stat="identity", position="stack")+
+  scale_fill_manual(values = phylum_colors_rel)+
+  labs(x= "Samples", y = "Relative abundance") +
+  theme( legend.text = element_text(size = 16, face = "italic"), 
+         legend.key.size = unit(0.4, 'cm'), 
+         axis.title = element_text(size = 16), 
+         axis.text.x = element_text(size = 16, angle = 90),
+         axis.text.y = element_text(size = 16), 
+         plot.title = element_text(size = 20), 
+         axis.title.x = element_text(size = 16, face = "bold"),
+         axis.title.y = element_text(size = 16, face = "bold"), 
+         legend.title = element_text(size = 16),
+         legend.position = "bottom")
+
+
+relative_plot_phylum
+```
+
+
+```{r}
+data <- subset_taxa(all_data, Kingdom == "Bacteria") #Eukaryota, Viruses, Archaea
+data <- subset_taxa(data, Genus != "")
+#Subset
+rel_phylum_global <- tax_glom(data, taxrank = 'Phylum')
+rel_phylum_global <- transform_sample_counts(rel_phylum_global, function(x) x*100 / sum(x) )
+rel_phyl_global_df<-psmelt(rel_phylum_global) # convert to data frame
+#str(rel_phyl_global_df)
+rel_phyl_global_df$Phylum[rel_phyl_global_df$Abundance < 5] <- "Phyla < 5% abund"
+rel_phyl_global_df$Phylum <- as.factor(rel_phyl_global_df$Phylum)
+```
+
+
+```{r, echo=FALSE}
+
+all_colors <- paletteer::paletteer_d("colorBlindness::SteppedSequential5Steps")
+color_matrix <- matrix(all_colors, nrow = 5, byrow = TRUE)
+#data <- subset_taxa(all_data, Kingdom == "Viruses") #Eukaryota, Viruses, Archaea
+# Obtener categorías únicas de la variable (ej. Specie, Country, City)
+categorias <- unique(rel_phyl_global_df$Phylum)
+n_cat <- length(categorias)
+
+# Separar las categorías que tienen color fijo
+# Seleccionar colores para las restantes
+if (n_cat <= 5) {
+  selected <- t(color_matrix)[1, 1:n_cat]
+  
+} else if (n_cat <= 10) {
+  tonos <- c(1, 3)
+  color_combos <- as.vector((color_matrix)[, tonos + 2])
+  selected <- color_combos[1:n_cat]
+  
+} else if (n_cat <= 25) {
+  selected <- t(all_colors)[1:n_cat]
+  
+} else {
+  selected <- rep(t(all_colors), length.out = n_cat)
+}
+
+# Asignar nombres
+names(selected) <- categorias
+
+
+
+
+relative_plot_phylum <- ggplot(data=rel_phyl_global_df, aes(x=Sample, y=Abundance, fill=Phylum))+ 
+  geom_bar(aes(), stat="identity", position="stack")+
+  #scale_fill_paletteer_d("colorBlindness::PairedColor12Steps")
+  scale_fill_manual(values = selected)+
+  labs(x= "Samples", y = "Relative abundance") +
+  theme( legend.text = element_text(size = 16, face = "italic"), 
+         legend.key.size = unit(0.4, 'cm'), 
+         axis.title = element_text(size = 16), 
+         axis.text.x = element_text(size = 16, angle = 90),
+         axis.text.y = element_text(size = 16), 
+         plot.title = element_text(size = 20), 
+         axis.title.x = element_text(size = 16, face = "bold"),
+         axis.title.y = element_text(size = 16, face = "bold"), 
+         legend.title = element_text(size = 16),
+         legend.position = "bottom")
+
+
+relative_plot_phylum
 ```
