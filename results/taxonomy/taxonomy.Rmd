@@ -89,6 +89,11 @@ all_data <- merge_phyloseq(raw_metagenomes, sample_data(df_metadata))
 # Verificar los nuevos nombres de las muestras
 sample_names(all_data)
 ```
+
+```{r}
+write.csv(df_meta_ordenado, file="D:/Users/hayde/Documents/R_sites/honey-dashboard/data/tables/metadata_Es_Shotgun_Mex_ordenado.csv", col.names = TRUE)
+```
+
 ```{r}
 muestras_vacias <- sample_names(all_data)[sample_sums(all_data) < 20000]
 print(muestras_vacias)
