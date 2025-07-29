@@ -30,10 +30,10 @@ First, we need to read the biom files. In this file, we found the following **Ki
 
 ```{r, echo=FALSE}
 # ruta
-ruta <- here::here("data/bioms", "honey_4_20_Es_Shotgun_Mexico_json.biom")
+ruta <- here::here("data/bioms", "honey_Es_Shotgun_Mexico_json.biom")
 
 # read the biom file
-raw_metagenomes <- import_biom(as.character(here::here("data/bioms", "honey_4_20_Es_Shotgun_Mexico_json.biom")))
+raw_metagenomes <- import_biom(as.character(here::here("data/bioms", "honey_Es_Shotgun_Mexico_json.biom")))
 
 # short the names, quit the first 4 characteres
 raw_metagenomes@tax_table@.Data <- substring(raw_metagenomes@tax_table@.Data, 4)
